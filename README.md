@@ -33,60 +33,46 @@ A production-ready AI-powered system that analyzes PDF medical reports to detect
 
 ## 📦 Installation
 
+### Quick Start
+
+For detailed setup instructions, see **[LOCAL-SETUP.md](LOCAL-SETUP.md)**
+
 ### Prerequisites
 
 - Node.js 18+ and npm 9+
 - Groq API key (free tier available)
 
-### Setup
+### Fast Setup
 
 1. **Clone the repository**
 
 ```bash
 git clone https://github.com/AhmedShafique313/MediMind.git
 cd MediMind
-```
-
-2. **Install dependencies**
-
-```bash
 npm install
 ```
 
-3. **Configure environment variables**
+2. **Configure environment variables**
 
 Create a `.env.local` file:
 
 ```env
-# Groq AI Configuration
 GROQ_API_KEY=your_groq_api_key_here
-
-# Application Configuration
 NODE_ENV=development
 NEXT_PUBLIC_APP_URL=http://localhost:3000
-
-# Stripe (Optional - for payment integration)
-STRIPE_SECRET_KEY=your_stripe_secret_key
-STRIPE_WEBHOOK_SECRET=your_webhook_secret
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_publishable_key
 ```
 
-4. **Get your Groq API key**
+Get your free Groq API key at [console.groq.com](https://console.groq.com)
 
-- Visit [console.groq.com](https://console.groq.com)
-- Sign up for a free account
-- Create an API key
-- Add it to `.env.local`
-
-5. **Run the development server**
+3. **Run the application**
 
 ```bash
 npm run dev
 ```
 
-6. **Open your browser**
-
 Navigate to [http://localhost:3000](http://localhost:3000)
+
+**Note**: The `.env.local` file is in `.gitignore` - your API keys stay secure and local!
 
 ## 🎯 Usage
 
